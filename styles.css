@@ -32,7 +32,7 @@ body {
   width: 65.7%;
   height: 100vh;
   display: grid;
-  grid-template: 30fr 1fr 140fr / 4fr 15fr;
+  grid-template: 20fr 1fr 140fr / 4fr 15fr;
 }
 
 .sidebar {
@@ -78,9 +78,9 @@ body {
   grid-area: 1 / 2 / 2 / -1;
   display: grid;
   gap: 20px;
-  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template: 82px 82px / 9fr 5fr;
   background-color: var(--header-colour);
-  padding: 2px 55px 20px 30px;
+  padding: 6px 55px 16px 30px;
 }
 
 form {
@@ -97,10 +97,30 @@ button[type="submit"] {
   margin-left: auto;
 }
 
+.top-name-small {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 2fr;
+  place-items: center;
+}
+
+#bighead {
+  height: 80%;
+}
+
+#bell {
+  height: 33%;
+}
+
+#mynamesmall {
+  font-family: Roboto-bold, sans-serif;
+  font-size: 22px;
+}
+
 .header-links {
   display: grid;
   grid-template: 50px / 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 18px;
+  align-content: center;
 }
 
 .header-links > a {
@@ -108,11 +128,12 @@ button[type="submit"] {
   text-decoration: none;
   text-align: center;
   font-family: Roboto-bold;
-  font-size: 22px;
-  padding: 10px;
-  padding-top: 12px;
+  font-size: 19px;
+  width: 117px;
+  height: 48px;
+  line-height: 48px;
   background-color: var(--sidebar-colour);
-  border-radius: 16px;
+  border-radius: 24px;
 }
 
 input[type="search"] {
