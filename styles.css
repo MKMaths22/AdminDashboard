@@ -5,6 +5,7 @@
   --header-colour: white;
   --shadow-colour: rgb(90, 90, 90);
   --light-text-colour: white;
+  --card-border-colour: #f1e148;
 }
 
 @font-face {
@@ -172,8 +173,12 @@ input[type="search"] {
 
 .card {
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 4px 4px 4px var(--shadow-colour);
+}
+
+.project-card {
+  border-left: 10px solid var(--card-border-colour);
 }
 
 h2 {
