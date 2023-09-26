@@ -68,7 +68,7 @@ body {
   position: absolute;
   height: 105%;
   left: 18px;
-  bottom: 3px;
+  bottom: 5px;
 }
 
 .icon > img {
@@ -218,8 +218,10 @@ input[type="search"] {
 }
 
 h2 {
+  padding-left: 2px;
   font-size: 33px;
-  font-family: Roboto-medium, Verdana, sans-serif;
+  font-weight: 550;
+  font-family: Roboto-bold, Verdana, sans-serif;
 }
 
 h3 {
