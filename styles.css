@@ -223,8 +223,16 @@ input[type="search"] {
   grid-template: 1fr 52px / 10fr 9fr;
 }
 
-.textdiv {
-  grid-column: 1 / -1;
+.top-row {
+  padding-top: 25px;
+}
+
+.middle-row {
+  padding-top: 35px;
+}
+
+.bottom-row {
+  padding-top: 45px;
 }
 
 .emptydiv {
@@ -270,14 +278,15 @@ h3 {
 }
 
 .textdiv {
+  grid-column: 1 / -1;
   display: grid;
-  grid-template: 50px 1fr / 1fr;
-  justify-items: start;
-  gap: 8px;
+  grid-template: 22px 1fr / 1fr;
+  gap: 5px;
 }
 
 h3.project-heading {
   font-family: Roboto-medium, Verdana, sans-serif;
+  margin: 0;
   font-size: 22px;
   font-weight: 500;
 }
