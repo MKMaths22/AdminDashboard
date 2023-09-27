@@ -206,7 +206,7 @@ input[type="search"] {
   grid-area: 1 / 1 / -1 / 2;
   display: grid;
   grid-template: 34px repeat(3, 1fr) / repeat(2, 1fr);
-  column-gap: 30px;
+  column-gap: 28px;
   row-gap: 36px;
 }
 
@@ -220,7 +220,10 @@ input[type="search"] {
   border-left: 10px solid var(--card-border-colour);
   display: grid;
   padding: 25px;
-  grid-template: 1fr 52px / 10fr 9fr;
+  padding-right: 13px;
+  /* grid-template: 1fr 52px / 10fr 9fr; */
+  grid-template: 1fr 52px / 8fr 7fr;
+  column-gap: 12px;
 }
 
 .top-row {
@@ -248,12 +251,13 @@ input[type="search"] {
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
   align-items: center;
-  justify-items: end;
+  /* justify-items: end;*/
+  justify-items: center;
   padding-right: 2px;
 }
 
 .star, .eye, .fork {
-  height: 29px;
+  height: 28px;
   opacity: 80%;
 }
 
