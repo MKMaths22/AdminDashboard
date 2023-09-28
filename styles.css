@@ -221,6 +221,7 @@ input[type="search"] {
   border-left: 10px solid var(--card-border-colour);
   display: grid;
   padding: 25px;
+  padding-right: 15px;
   grid-template: 1fr 46px / 1fr;
 }
 
@@ -243,15 +244,14 @@ input[type="search"] {
   justify-content: end;
   align-items: center;
   justify-items: end;
-  padding-right: 8px;
 }
 
-.iconsdiv.left-side {
-  padding-right: 8px;
+.left-side > .iconsdiv {
+  padding-right: 18px;
 }
 
-.iconsdiv.right-side {
-  padding-right: 14px;
+.right-side > .iconsdiv {
+  padding-right: 24px;
 }
 
 .star, .eye, .fork {
@@ -283,6 +283,10 @@ h3 {
   display: grid;
   grid-template: 22px 1fr / 1fr;
   gap: 5px;
+}
+
+.left-side > .textdiv {
+  padding-right: 30px;
 }
 
 h3.project-heading {
