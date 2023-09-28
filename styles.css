@@ -221,7 +221,7 @@ input[type="search"] {
   border-left: 10px solid var(--card-border-colour);
   display: grid;
   padding: 25px;
-  grid-template: 1fr 52px / 1fr;
+  grid-template: 1fr 46px / 1fr;
 }
 
 .top-row {
@@ -237,12 +237,21 @@ input[type="search"] {
 }
 
 .iconsdiv {
-  height: 52px;
+  height: 46px;
   display: grid;
   grid-template: 1fr / repeat(3, 60px);
   justify-content: end;
   align-items: center;
   justify-items: end;
+  padding-right: 8px;
+}
+
+.iconsdiv.left-side {
+  padding-right: 8px;
+}
+
+.iconsdiv.right-side {
+  padding-right: 14px;
 }
 
 .star, .eye, .fork {
