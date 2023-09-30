@@ -158,7 +158,7 @@ button[type="submit"] {
 .header-links {
   display: grid;
   grid-template: 50px / 1fr 1fr 1fr;
-  gap: 19px;
+  gap: 15px;
   align-content: center;
 }
 
