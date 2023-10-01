@@ -35,10 +35,12 @@ body {
 }
 
 .dashboard {
-  width: 65.7%;
+  width: min(1680px, 90vw);
   height: 100vh;
   display: grid;
-  grid-template: 25fr 1fr 140fr / 4fr 15fr;
+  grid-template: 25fr 1fr 140fr / 353.67px 1fr;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .sidebar {
@@ -171,7 +173,7 @@ button[type="submit"] {
 }
 
 input[type="search"] {
-  width: 705px;
+  width: min(705px, calc(705/1680 * 90vw));
   height: 35px;
   background-color: var(--content-colour);
   border-radius: 17px;
@@ -202,8 +204,8 @@ input[type="search"] {
   grid-area: 1 / 1 / -1 / 2;
   display: grid;
   grid-template: 34px repeat(3, 1fr) / repeat(2, 1fr);
-  column-gap: 28px;
-  row-gap: 36px;
+  column-gap: calc(min(28px, 28/1680 * 90vw));
+  row-gap: calc(min(36px, 36/1680 * 90vw));
 }
 
 .card {
